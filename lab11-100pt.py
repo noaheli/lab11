@@ -24,8 +24,8 @@ def animate():
     x1, y1, x2, y2 = drawpad.coords(circle)
     if x2 > drawpad.winfo_width(): 
         drawpad.move(circle, -800, 0)
-    elif x1 < 0:
-        direction = 1
+    elif x2 < 0:
+        direction = 10
     #Move our oval object by the value of direction
     drawpad.move(circle,direction,0)
     # Wait for 1 millisecond, then recursively call our animate function
